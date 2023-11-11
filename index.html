@@ -33,7 +33,7 @@
         $('body').terminal({
             help: async function(){
                 await this.echo("You need to solve the first challenge in order to get the secret passcode for the next challenge, \n once you have gotten the deciphered passcode, type the passcode to view the next challenge\n"
-                 + "[[gb;green;black]" + "First challenge is to decipher this -->   8.5.12.12.15.23.15.18.12.4 (A=1,B=2..)" 
+                 + "[[gb;green;black]" + "First challenge is to decipher this -->   8.5.12.12.15.23.15.18.12.4" 
                  + "[[gb;red;black]" + "\n Type checkFlag FLAGNAME to answer"
                  , { typing: true, delay: 55 });
                 
@@ -59,7 +59,7 @@
                         if (data.success && data.message == 'FLAG1') {
                         // Correct flag, handle success
                         await this.echo("[[gb;green;black]" + "\nCorrect Answer ! " , { typing: true, delay: 55 })
-                        await this.echo("[[gb;green;black]" + "Heres the next cipher -- >  pvbuozthlhx (A-Z,B-Y....)", { typing: true, delay: 55 })
+                        await this.echo("[[gb;green;black]" + "Heres the next cipher -- >  pvbuozthlhx ", { typing: true, delay: 55 })
                         //console.log(data.message);
                         } 
                         else if(data.success && data.message == 'FLAG2'){
