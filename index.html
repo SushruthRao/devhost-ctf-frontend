@@ -77,11 +77,11 @@
                             await this.echo("[[gb;green;black]" + "\nCorrect Answer !" , { typing: true, delay: 55 });
                             await this.echo("[[gb;red;black]" +"You have succesfully gotten all the flags congrats !!!" , { typing: true, delay: 55 });
                         }
-                       /* else {
+                        else {
                         // Incorrect flag, handle error
                         await this.echo( "[[gb;red;black]" + "\n Wrong FLAG ! \nType checkFlag [FLAGNAME] to answer")
                         //console.error(data.message);
-                        }*/
+                        }
                     } catch (error) {
                         await this.echo( "[[gb;red;black]" + "\n Wrong FLAG !\nType checkFlag FLAGNAME to answer")
                        // console.error('Error:', error);
