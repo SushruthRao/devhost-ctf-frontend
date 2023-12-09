@@ -29,9 +29,9 @@
 
         $('body').terminal({
             help: async function(){
-                await this.echo("You need to solve the first challenge in order to get the secret passcode for the next challenge, \n once you have gotten the deciphered passcode, type the passcode to view the next challenge\n"
+                await this.echo("You need to solve the first challenge in order to get the secret flag for the next challenge, \n once you have gotten the deciphered flag, checkFlag flagname to view the next challenge\n"
                  + "[[gb;green;black]" + "First challenge is to decipher this -->   8.5.12.12.15.23.15.18.12.4" 
-                 + "[[gb;red;black]" + "\n Type checkFlag flagname to answer"
+                 + "[[gb;red;black]" + "\n Type checkFlag flagname to answer (where flagname is the deciphered answer)"
                  , { typing: true, delay: 55 });
                 
                
