@@ -56,7 +56,7 @@
                         if (data.success && data.message == 'FLAG1') {
                         // Correct flag, handle success
                         await this.echo("[[gb;green;black]" + "\nCorrect Answer ! " , { typing: true, delay: 55 })
-                        await this.echo("[[gb;green;black]" + "Heres the next cipher -- >  pvbuozthlhx ", { typing: true, delay: 55 })
+                        await this.echo("[[gb;green;black]" + "Heres the next cipher -- >  jdxekzfrnrb ", { typing: true, delay: 55 })
                         //console.log(data.message);
                         } 
                         else if(data.success && data.message == 'FLAG2'){
@@ -101,8 +101,8 @@
 
         });
         function sendPostRequest() {
-            // Your secret message
-            const secretMessage = "Secret Flag : ivjfvhgklhguozt";
+            
+            const sm = "flg : qdptdrsonrsekzf";
 
             // Define the request parameters
             const requestOptions = {
@@ -110,7 +110,7 @@
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ message: secretMessage }),
+                body: JSON.stringify({ message: sm }),
             };
 
             // Send the POST request
